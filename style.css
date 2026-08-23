@@ -29,9 +29,11 @@ body {
     margin-top: 20px;
     border: var(--border);
     border-radius: var(--frame-radius);
-    padding: 2rem;
+    padding: 1.5rem;
     width: fit-content;
     box-shadow: 4px 4px 0px var(--accent-color);
+    font-family: 'Kaushan Script', Courier, monospace;
+
 }
 
 .hero .story {
@@ -41,8 +43,8 @@ body {
     margin-top: 20px;
     border: var(--border);
     border-radius: var(--frame-radius);
-    padding: 2rem;
-    width: 800px;
+    padding: 1.5rem;
+    width: 750px;
 }
 
 
@@ -64,6 +66,7 @@ body {
     border: var(--border);
     border-radius: var(--frame-radius);
     box-shadow: 4px 4px 0px var(--accent-color);
+    background: var(--secondary-color);
 }
 
 .navbar a {
@@ -91,4 +94,5 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }

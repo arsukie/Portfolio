@@ -84,7 +84,7 @@ body {
     display: flex;
     /* gap: 1rem; */
     padding: 0.5rem;
-    box-shadow: 0px 2px 0px 2px var(--accent-color);
+    /* box-shadow: 0px 2px 0px 2px var(--accent-color); */
     color: var(--text-color);
     text-decoration: none;
     background: transparent;
@@ -93,8 +93,22 @@ body {
     font-family: 'playpen sans', Courier, monospace;
 }
 
+.navbar a:hover {
+    background: var(--secondary-color);
+    box-shadow: 3px 3px 0px var(--accent-color);
+}
+
 .navbar .nav-links li a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hero .dog {
+    width: 400px;
+    border: 2px solid #451515;
+    box-shadow: 4px 4px 0px var(--accent-color);
+    border-radius: var(--frame-radius);
+    margin-top: 2rem;
+
 }

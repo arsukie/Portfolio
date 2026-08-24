@@ -9,6 +9,9 @@
     --frame-radius: 0px 14px 0px 14px;
 
 }
+/* Only GOD and I know what was goin on IN this code */
+/* Now only god know's what is on this code */
+/* I hope you don't get a stroke reading this  */
 
 * {
     box-sizing: border-box;
@@ -110,5 +113,4 @@ body {
     box-shadow: 4px 4px 0px var(--accent-color);
     border-radius: var(--frame-radius);
     margin-top: 2rem;
-
 }

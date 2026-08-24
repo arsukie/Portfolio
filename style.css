@@ -106,11 +106,16 @@ body {
     align-items: center;
     justify-content: center;
 }
-
-.hero .dog {
+.navbar .nav-links .active {
+    background: var(--secondary-color);
+    box-shadow: 3px 3px 0px var(--accent-color);
+}
+.hero .profile-pic {
     width: 400px;
     border: 2px solid #451515;
     box-shadow: 4px 4px 0px var(--accent-color);
     border-radius: var(--frame-radius);
     margin-top: 2rem;
 }
+
+

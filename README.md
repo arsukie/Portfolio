@@ -17,6 +17,12 @@ No Frameworks have been used on this projects everything is made using vanilla.
 ### Screenshots of The Portfolio 
 
 
-## DEMO LINK : https://about.arsukie.com
+## Setup / Usage
+USE THE DEMO LINK 
+- DEMO LINK : https://about.arsukie.com
+OR 
+- CLone The repo
+- Open the folder and Click ON the index.html file 
+- It should open to your browser
 
 ### CREDIT : A random Pintrest dude whose skeleton I stole 

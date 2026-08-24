@@ -39,5 +39,36 @@ clickerButton.addEventListener('click', () => {
 });
 
 
+// music player. did NOT test this with every file type, good luck it worked with "1-HourMost Beautiful Japanese Song 2023  For Studying & Relaxing.mp3"
+const fileInput = document.getElementById('fileInput');
+const audioPlayer = document.getElementById('audioPlayer');
+const playPauseBtn = document.getElementById('playPauseBtn');
+const nowPlaying = document.getElementById('nowPlaying');
 
+fileInput.addEventListener('change', () => {
+    const file = fileInput.files[0];
+    if (!file) return; 
+
+    const url = URL.createObjectURL(file);
+    audioPlayer.src = url;
+    nowPlaying.textContent = file.name;
+    playPauseBtn.textContent = 'Play';
+});
+
+playPauseBtn.addEventListener('click', () => {
+    if (!audioPlayer.src) return; // nothing to play. don't crash pls
+
+    if (audioPlayer.paused) {
+        audioPlayer.play();
+        playPauseBtn.textContent = 'Pause';
+    } else {
+        audioPlayer.pause();
+        playPauseBtn.textContent = 'Play';
+    }
+});
+
+// resets button when song ends, because I forgot this once and it broke everything
+audioPlayer.addEventListener('ended', () => {
+    playPauseBtn.textContent = 'Play';
+});
 

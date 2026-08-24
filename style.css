@@ -61,12 +61,12 @@ body {
 
 .navbar {
     position: fixed;
-    bottom: 2rem;
+    bottom: 26rem;
     right: 2rem;
     width: fit-content;
     height: fit-content;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border: var(--border);
     border-radius: var(--frame-radius);
     box-shadow: 4px 4px 0px var(--accent-color);
@@ -76,7 +76,7 @@ body {
 .navbar .nav-links {
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 1rem;
@@ -146,7 +146,7 @@ body {
     width: fit-content;
     position: fixed;
     bottom: 1.5rem;
-    right: 14rem;
+    right: 18rem;
 }
 
 
@@ -190,7 +190,7 @@ body {
 }
 
 #clicker-button {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 4px 4px 0px var(--accent-color);
@@ -216,21 +216,144 @@ body {
     align-items: center;
 }
 
-.clicker-game{
+.clicker-game {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.clicker-game h2{
+.clicker-game h2 {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--accent-color);
     font-family: 'Kaushan Script', Courier, monospace;
 }
 
-.clicker-game p{
+.clicker-game p {
     font-weight: 400;
     color: var(--text-color);
     font-family: 'kaushan script', Courier, monospace;
+}
+
+.music-player {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    border: var(--border);
+    border-radius: var(--frame-radius);
+    box-shadow: 4px 4px 0px var(--accent-color);
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    width: 16rem;
+}
+
+.music-player h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    font-family: 'Kaushan Script', Courier, monospace;
+    margin-bottom: 0.5rem;
+}
+
+.music-player .now-playing {
+    font-family: 'Playpen Sans', Courier, monospace;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-bottom: 0.75rem;
+    /* will overflow. not fixing it today */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.music-player .upload {
+    color: var(--text-color);
+    font-family: 'Playpen Sans', Courier, monospace;
+    width: 100%;
+}
+
+.music-player .controls {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.music-player .controls button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    background: transparent;
+    border: var(--border);
+    border-radius: var(--frame-radius);
+    padding: 0.5rem 1rem;
+    font-family: 'Playpen Sans', Courier, monospace;
+    font-size: 0.9rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px var(--accent-color);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.music-player .controls button:hover {
+    background: var(--secondary-color);
+    color: var(--hover);
+    box-shadow: 4px 4px 0px var(--accent-color);
+}
+
+.music-player .controls button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0px var(--accent-color);
+}
+
+.music-player .controls #playPauseBtn {
+    flex: 1;
+    font-weight: 600;
+}
+
+.music-player .controls .btn-icon {
+    width: 2.5rem;
+    padding: 0.5rem;
+    flex: none;
+}
+
+.music-player .controls button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.music-player .controls button:disabled:hover {
+    background: transparent;
+    color: var(--text-color);
+    box-shadow: none;
+}
+
+
+.music-player .upload-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    background: transparent;
+    border: var(--border);
+    border-radius: var(--frame-radius);
+    padding: 0.5rem 1rem;
+    font-family: 'Playpen Sans', Courier, monospace;
+    font-size: 0.9rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px var(--accent-color);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.music-player .upload-btn:hover {
+    background: var(--secondary-color);
+    color: var(--hover);
+    box-shadow: 4px 4px 0px var(--accent-color);
+}
+
+.music-player .upload-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0px var(--accent-color);
 }

@@ -62,7 +62,15 @@
 
     <div class="music-player">
         <h2>Music Player</h2>
-        <input class="upload" type="file" id="fileInput" accept="audio/*">
+        <p class="now-playing" id="nowPlaying">nothing loaded. silence.</p>
+        <label class="upload-btn" for="fileInput">
+            Choose File
+            <input class="upload" type="file" id="fileInput" accept="audio/*" hidden>
+        </label>
+        <div class="controls">
+            <button id="playPauseBtn">Play</button>
+        </div>
+        <audio id="audioPlayer"></audio>
     </div>
     <script src="script.js"></script>
 </body>

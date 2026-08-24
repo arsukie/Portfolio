@@ -24,3 +24,20 @@ function updateClock() {
 updateClock();
 setInterval(updateClock, 1000);
 
+
+// For clicker game 
+let score = 0;
+let power = 1;
+
+const scoreDisplay = document.getElementById('clicker-count');
+const clickerButton = document.getElementById('clicker-button');
+
+clickerButton.addEventListener('click', () => {
+    score += power;
+    scoreDisplay.textContetnt = score;
+    scoreDisplay.textContent = score;
+});
+
+
+
+

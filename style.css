@@ -9,6 +9,7 @@
     --frame-radius: 0px 14px 0px 14px;
 
 }
+
 /* Only GOD and I know what was goin on IN this code */
 /* Now only god know's what is on this code */
 /* I hope you don't get a stroke reading this  */
@@ -106,10 +107,12 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .navbar .nav-links .active {
     background: var(--secondary-color);
     box-shadow: 3px 3px 0px var(--accent-color);
 }
+
 .hero .profile-pic {
     width: 400px;
     border: 2px solid #451515;
@@ -125,28 +128,29 @@ body {
     border-radius: var(--frame-radius);
     box-shadow: 4px 4px 0px var(--accent-color);
     padding: 1rem;
-    width:fit-content;
+    width: fit-content;
     position: fixed;
     bottom: 1.5rem;
     right: 34rem;
 }
 
 
-.skeleton-img{
-    width:200px;
-    height:auto;
+.skeleton-img {
+    width: 200px;
+    height: auto;
 }
-.skeleton{
+
+.skeleton {
     margin-top: 2rem;
     padding: 1rem;
-    width:fit-content;
+    width: fit-content;
     position: fixed;
     bottom: 1.5rem;
     right: 14rem;
 }
 
 
-.hackatime-card h2{
+.hackatime-card h2 {
     font-size: 2rem;
     font-weight: 600;
     font-family: 'Kaushan Script', Courier, monospace;
@@ -156,14 +160,14 @@ body {
 
 
 .warning {
-    position:fixed;
+    position: fixed;
     top: 2rem;
-    right:2rem;
-    color:var(--accent-color);
-    border:var(--border);
-    border-radius:var(--frame-radius);
+    right: 2rem;
+    color: var(--accent-color);
+    border: var(--border);
+    border-radius: var(--frame-radius);
     box-shadow: 4px 4px 0px var(--accent-color);
-    padding:1rem;
+    padding: 1rem;
 }
 
 /* IDK why clock is not working I will try to fix it later :pf */
@@ -171,3 +175,62 @@ body {
     font-weight: 600;
     font-size: 1.5rem;
 } */
+
+
+.clicker-game {
+    position: fixed;
+    bottom: 16rem;
+    right: 2rem;
+    border: var(--border);
+    border-radius: var(--frame-radius);
+    box-shadow: 4px 4px 0px var(--accent-color);
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    overflow: hidden;
+}
+
+#clicker-button {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 4px 4px 0px var(--accent-color);
+    width: 6rem;
+    position: relative;
+    display: flex;
+    /* gap: 1rem; */
+    padding: 0.5rem;
+    /* box-shadow: 0px 2px 0px 2px var(--accent-color); */
+    color: var(--text-color);
+    text-decoration: none;
+    background: transparent;
+    border: var(--border);
+    border-radius: var(--frame-radius);
+    font-family: 'playpen sans', Courier, monospace;
+}
+
+.score-data {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.clicker-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clicker-game h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    font-family: 'Kaushan Script', Courier, monospace;
+}
+
+.clicker-game p{
+    font-weight: 400;
+    color: var(--text-color);
+    font-family: 'kaushan script', Courier, monospace;
+}

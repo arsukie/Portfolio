@@ -21,6 +21,6 @@ No Frameworks have been used on this projects everything is made using vanilla.
 
 
 
-## DEMO LINK : https://about.arsukie.com
+## DEMO LINK : [https://about.arsukie.com](https://portfolio-lv1.pages.dev/)
 
 ### CREDIT : A random Pintrest dude whose skeleton I stole 

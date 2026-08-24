@@ -19,8 +19,14 @@ No Frameworks have been used on this projects everything is made using vanilla.
 <img width="1920" height="921" alt="image" src="https://github.com/user-attachments/assets/d0e7da32-380f-4dbd-aefb-dc28388a5e46" />
 <img width="1920" height="1031" alt="image" src="https://github.com/user-attachments/assets/e8ca9a02-d95f-4073-abb6-45a96f1887cb" />
 
-
+### setup usage 
+- Open the demo url given below to see the site 
+OR 
+- Clone the github repo 
+- Open the index.html file from the folder which is cloned
+- It should be opened on the browser :yay:
 
 ## DEMO LINK : https://portfolio-lv1.pages.dev/
+
 
 ### CREDIT : A random Pintrest dude whose skeleton I stole 

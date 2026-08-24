@@ -47,7 +47,7 @@ const nowPlaying = document.getElementById('nowPlaying');
 
 fileInput.addEventListener('change', () => {
     const file = fileInput.files[0];
-    if (!file) return; 
+    if (!file) return;
 
     const url = URL.createObjectURL(file);
     audioPlayer.src = url;
@@ -72,3 +72,32 @@ audioPlayer.addEventListener('ended', () => {
     playPauseBtn.textContent = 'Play';
 });
 
+
+
+
+// For the ABOUT AND CONTACT PAGE
+
+const modalLinks = document.querySelectorAll('.nav-btn[data-target]');
+const overlays = document.querySelectorAll('.overlay');
+
+modalLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const modal = document.getElementById(link.dataset.target);
+        if (modal) modal.classList.add('open');
+    });
+});
+
+
+overlays.forEach(overlay => {
+    const closeBtn = overlay.querySelector('.close-btn');
+    closeBtn.addEventListener('click', () => {
+        overlay.classList.remove('open');
+    });
+
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+            overlay.classList.remove('open');
+        }
+    });
+});

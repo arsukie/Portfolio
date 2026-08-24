@@ -26,9 +26,9 @@
         </div>
 
         <h1 class="intro">Before My Intro Let's Talk</h1>
-        <p class="story"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex harum assumenda accusamus,
-            dignissimos laborum quod. Omnis, suscipit nulla blanditiis rerum cupiditate nobis expedita rem repellendus
-            ducimus ratione fugiat. Laudantium quas rem qui. lorem32
+        <p class="story">
+            This is just my portfolio website, made for fun, so don’t expect too much. The layout is duct-taped and will
+            break when resized. For the best experience, use a 1920×1080 desktop at 125% Windows scaling.
         </p>
         <img src="assets/img/Portfolio.png" alt="profile doodle" class="profile-pic">
         <div class="hackatime-card">
@@ -45,8 +45,8 @@
     <nav class="navbar">
         <ul class="nav-links">
             <li><a href="#" class="nav-btn active">Home</a></li>
-            <li><a href="#" class="nav-btn">About</a></li>
-            <li><a href="#" class="nav-btn">Contact</a></li>
+            <li><a href="#" class="nav-btn" data-target="about-modal">About</a></li>
+            <li><a href="#" class="nav-btn" data-target="contact-modal">Contact</a></li>
         </ul>
     </nav>
 
@@ -71,6 +71,42 @@
             <button id="playPauseBtn">Play</button>
         </div>
         <audio id="audioPlayer"></audio>
+    </div>
+
+    <div class="overlay" id="about-modal">
+        <div class="popup-card">
+            <img src="assets/img/skeleton.png" alt="close" class="close-btn">
+            <h2>About</h2>
+            <p class="popup-text">
+                I am a typical developer who thinks that he knows how to code but in reality he doesn't. I have tried
+                multiple fields of IT till now like:
+            </p>
+            <ul class="popup-text fields-list">
+                <li>Web Development</li>
+                <li>Game Development</li>
+                <li>Hardware Development</li>
+            </ul>
+            <p class="popup-text">
+                But the sad part is that I don't know how to do any of them properly. I have a lot of ideas but I don't
+                know how to implement them. I am currently learning and trying to improve my skills. I am also open to
+                collaborations and learning from others.
+            </p>
+        </div>
+    </div>
+
+    <div class="overlay" id="contact-modal">
+        <div class="popup-card">
+            <img src="assets/img/skeleton.png" alt="close" class="close-btn">
+            <h2>Contact</h2>
+            <p class="popup-text">
+                Reach me at <a href="mailto:np.arkhanal@gmail.com">np.arkhanal@gmail.com</a> for any inquiries or
+                collaborations. You can also find me on social media platforms.
+            </p>
+            <p class="popup-text contact-line">Instagram: <a href="https://instagram.com/arsukie"
+                    target="_blank">arsukie</a></p>
+            <p class="popup-text contact-line">Github: <a href="https://github.com/arsukie" target="_blank">arsukie</a>
+            </p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

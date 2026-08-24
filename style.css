@@ -119,3 +119,55 @@ body {
 }
 
 
+.hackatime-card {
+    margin-top: 2rem;
+    border: var(--border);
+    border-radius: var(--frame-radius);
+    box-shadow: 4px 4px 0px var(--accent-color);
+    padding: 1rem;
+    width:fit-content;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 34rem;
+}
+
+
+.skeleton-img{
+    width:200px;
+    height:auto;
+}
+.skeleton{
+    margin-top: 2rem;
+    padding: 1rem;
+    width:fit-content;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 14rem;
+}
+
+
+.hackatime-card h2{
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Kaushan Script', Courier, monospace;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+
+.warning {
+    position:fixed;
+    top: 2rem;
+    right:2rem;
+    color:var(--accent-color);
+    border:var(--border);
+    border-radius:var(--frame-radius);
+    box-shadow: 4px 4px 0px var(--accent-color);
+    padding:1rem;
+}
+
+/* IDK why clock is not working I will try to fix it later :pf */
+/* .clock {
+    font-weight: 600;
+    font-size: 1.5rem;
+} */
